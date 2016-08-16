@@ -1,1 +1,1 @@
-public class ETLC_Exception extends Exception {}
+public with sharing class ETLC_Exception extends Exception {}
