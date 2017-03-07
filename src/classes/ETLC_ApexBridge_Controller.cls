@@ -1,4 +1,4 @@
-public class ETLC_ApexBridge_Controller {
+public with sharing class ETLC_ApexBridge_Controller {
     @AuraEnabled
     public static String execute(String dataJson) {
         ETLC_ApexBridge_Data data;

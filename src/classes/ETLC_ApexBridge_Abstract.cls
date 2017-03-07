@@ -1,4 +1,4 @@
-public abstract class ETLC_ApexBridge_Abstract {
+public with sharing abstract class ETLC_ApexBridge_Abstract {
     public abstract void process(ETLC_ApexBridge_Data data);
     
     // JSON Date / DateTime
