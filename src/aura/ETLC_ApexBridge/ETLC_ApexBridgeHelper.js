@@ -44,14 +44,14 @@
         // Force refresh?
         if (forceRefresh) {
             action.setStorable({"ignoreExisting": "true"});
-        } else if (component.get("v.debugClient")) {
+        } else {
+            action.setStorable();
+        }
+        if (component.get("v.debugClient")) {
             console.log('Getting ready to call Apex. ', {
                 request: request,
                 action: action
             });
-            action.setStorable({"ignoreExisting": "true"});
-        } else {
-            action.setStorable();
         }
         
         startTime = new Date();
