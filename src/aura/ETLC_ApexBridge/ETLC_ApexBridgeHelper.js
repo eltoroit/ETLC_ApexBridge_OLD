@@ -52,9 +52,6 @@
                 request: request,
                 action: action
             });
-            if(forceRefresh) {
-            	action.setStorable({"ignoreExisting": "true"});
-            }
         }
         
         startTime = new Date();
